@@ -1,3 +1,4 @@
-__pycache__/
-.pawchive_cookies.txt
-favorites.json
+*
+!README.md
+!kemono2pawchive.py
+!.gitignore
