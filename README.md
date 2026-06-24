@@ -15,21 +15,21 @@ Open [export favorites page](https://kemono.cr/account/favorites/export) in your
 #
 # NOTE: run in a private shell session to avoid saving credentials to history,
 #       or clean shell history manually afterwards
-python3 kemono2pawchive.py login "username" "password"
+./kemono2pawchive.py login "username" "password"
 
 # list current pawchive favorites
-python3 kemono2pawchive.py list
+./kemono2pawchive.py list
 
-# import from kemono favorites JSON export, only working services (script line 14)
-python3 kemono2pawchive.py import favorites.json
+# import from kemono favorites JSON export, only working services (script line 15)
+./kemono2pawchive.py import favorites.json
 
-# import with all services and skip duplication checks
-python3 kemono2pawchive.py import favorites.json --service all --force
+# attempt import with all services and skip duplication checks
+./kemono2pawchive.py import favorites.json --service all --force
 
 # pass session cookie value directly (skip login)
-python3 kemono2pawchive.py --cookie "session=abc123" import favorites.json
+./kemono2pawchive.py --cookie "session=abc123" import favorites.json
 
 # override cookie file (default is ".pawchive_cookies.txt" in script directory)
-python3 kemono2pawchive.py --cookie-file "/path/to/cookies.txt" import favorites.json
+./kemono2pawchive.py --cookie-file "/path/to/cookies.txt" import favorites.json
 ```
 
