@@ -12,7 +12,7 @@ import urllib.request
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 PAWCHIVE_URL = "https://pawchive.st"
 PAWCHIVE_DOMAIN = urllib.parse.urlparse(PAWCHIVE_URL).netloc
-WORKING_SERVICES = {"patreon", "pixiv", "fanbox"}
+WORKING_SERVICES = {"patreon", "fanbox"}
 
 
 # --- http helpers
